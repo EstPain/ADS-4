@@ -35,7 +35,7 @@ int binary(int* arr, int len, int value, int left) {
       int x = mid, xx = mid;
       while (arr[++x] == value) {
         count++;
-      }
+    }
       while (arr[--xx] == value && xx > left) {
          count++;
        }
@@ -44,10 +44,10 @@ int binary(int* arr, int len, int value, int left) {
            R = mid;
        } else {
            L = mid + 1;
-       }
-   }
- return 0;
- }
+      }
+  }
+  return 0;
+}
 
  int countPairs3(int *arr, int len, int value) {
   int k = 0;
