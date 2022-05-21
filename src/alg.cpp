@@ -49,7 +49,7 @@ int binary(int* arr, int len, int value, int left) {
   return 0;
 }
 
- int countPairs3(int *arr, int len, int value) {
+int countPairs3(int *arr, int len, int value) {
   int k = 0;
   for (int i = 0; i < len; i++) {
     k += binary(arr, len, value - arr[i], i);
